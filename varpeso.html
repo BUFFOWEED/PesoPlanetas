@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Peso en Mars</title>
+        <style type= "text/css">
+            body{
+                background-color:darkslateblue;
+                color: aquamarine;
+            }
+            strong{
+                color:blanchedalmond;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>DESCUBRE TU PESO EN OTROS PLANETAS :o</h1>
+        <script type="text/javascript">
+            var usuario = prompt("cual es tu peso: ");
+            var peso = parseFloat(usuario);
+            var planetas= prompt("Que planeta desea visitar: Marte, Jupiter, Neptuno, Mercurio, Urano ");
+            var planeta = planetas;
+            var g_tierra = 9.8;
+            var g_marte = 3.7;
+            var g_jupiter=24.8;
+            var g_netptuno = 11;
+            var g_mercurio = 3.70;
+            var g_urano = 8.69;
+            switch (planeta) {
+                case'Marte': case 'marte':
+                    peso_marte = (peso * g_marte)/g_tierra;
+                    peso_marte =  (peso_marte.toFixed(2));
+                    document.write("<h2>Tu peso en marte es <strong>" + peso_marte + " kg</strong></h2>");    
+                    break;
+                case 'Jupiter': case 'jupiter': 
+                    peso_jupiter = (peso * g_jupiter)/g_tierra;
+                    peso_jupiter =  (peso_jupiter.toFixed(2));
+                    document.write("<h2>Tu peso en jupiter  es <strong>" + peso_jupiter + " kg</strong></h2>");
+                    break;
+                case 'Neptuno': case 'neptuno':
+                    peso_neptuno = (peso * g_netptuno)/g_tierra;
+                    peso_neptuno =  (peso_neptuno.toFixed(2));
+                    document.write("<h2>Tu peso en neptuno  es <strong>" + peso_neptuno + " kg</strong></h2>");
+                    break;
+                case 'Mercurio': case 'mercurio': 
+                    peso_mercurio = (peso * g_mercurio)/g_tierra;
+                    peso_mercurio =  (peso_mercurio.toFixed(2));
+                    document.write("h2>Tu peso en mercurio  es <strong>" + peso_mercurio + " kg</strong></h2>");
+                    break;
+                case 'Urano': case 'urano': 
+                    peso_urano = (peso * g_urano)/g_tierra;
+                    peso_urano =  (peso_urano.toFixed(2));
+                    document.write("<h2>Tu peso en urano  es <strong>" + peso_urano + " kg</strong></h2>");
+                    break;            
+                default:
+                    document.write("<strong><h2>Opcion invlaida :X</h2></strong>")
+                    break;
+            }
+        </script>
+    </body>
+</html>
